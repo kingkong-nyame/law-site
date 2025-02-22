@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennedy Osei - Profile</title>
+    <style>
+        /* General Reset */
+      body, h1, h2, h3, p, ul, li {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      
+      /* Body Styling */
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          background-color: #f8f9fa;
+          color: #333;
+      }
+      
+     /* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004080;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background: #ffd700;
+    color: #004080;
+}
+      /* Profile Section */
+.profile {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Matches the team section background */
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 300px; /* Restricts image width for better responsiveness */
+    height: auto; /* Keeps the aspect ratio intact */
+    border-bottom: 3px solid #004080; /* Matches the team section image border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+    border-radius: 10px; /* Matches the rounded corners of the team section */
+    overflow: hidden; /* Ensures the image fits within the border radius */
+    margin: 0 auto; /* Centers the image */
+    display: block; /* Makes the image a block-level element */
+}
+
+.profile-title {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+.profile-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Matches the white cards in the team section */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-content h2 {
+    color: #004080; /* Matches the primary color of the team section */
+    margin-bottom: 20px;
+}
+
+.profile-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-content a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.profile-content a:hover {
+    text-decoration: underline;
+}
+
+      
+      /* Footer */
+footer {
+    background: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+      
+          </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Crown & Counsel Law Firm</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Lawyers / Advocates</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile">
+        <div class="container">
+            <div class="profile-header">
+                <img src="images/cc.jpg" alt="Hans Wilson" class="profile-img">
+                <h1>Kennedy Osei</h1>
+                <p class="profile-title">Business lawyer,Civil,Property,Wills / Trusts</p>
+            </div>
+            <div class="profile-content">
+                <h2>About Kennedy Osei</h2>
+                <p>Kennedy Osei is a seasoned legal expert specializing in a wide array of legal services, including  Family Law, and Debt Recovery. His exceptional skills in handling criminal and family cases make him a trusted advocate for clients seeking comprehensive legal solutions.</p>
+
+                <h2>Key Areas of Expertise</h2>
+                <ul>
+                    
+                    <li>Family Law</li>
+                    <li>Debt Recovery</li>
+                    <li>Property Disputes</li>
+                    <li>Wills and Trusts</li>
+                </ul>
+
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:adanomah@example.com">Kennedy@crownandcounsel.com</a></p>
+                <p>Phone: +233 242 573 229</p>
+            </div> </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Crown & Counsel Law Firm. All rights reserved.</p>
+    </footer>
+</body>
+</html>

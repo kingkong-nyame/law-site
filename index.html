@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional legal services with experienced advocates.">
+    <title>Crown & Counsel Law Firm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Crown & Counsel Law Firm</a>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Lawyers / Advocates</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Crown & Counsel Law Firm</h1>
+            <p>Raising the Standard, Defending Your Future.</p>
+            <a href="about.html" class="btn">Learn More</a>
+        </div>
+    </section>
+    
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>
+                        At <strong>Crown & Counsel Law Firm</strong>, we pride ourselves on delivering exceptional legal services to individuals, businesses, and communities. With a team of highly experienced advocates, we are committed to protecting your rights, resolving your disputes, and ensuring justice is served.
+                    </p>
+                    <p>
+                        Our dedication to excellence and our client-focused approach make us a trusted partner for all your legal needs. Let us guide you with professionalism, integrity, and expertise.
+                    </p>
+                    <a href="contact.html" class="btn">Get in Touch</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="About Crown & Counsel Law Firm">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Meet Our Lawyers / Advocates</h2>
+            <p class="team-description">Our team comprises experienced legal professionals dedicated to providing expert advice and representation in various areas of law.</p>
+            <div class="team-list">
+                <div class="team-member">
+                    <a href="Rose.html">
+                        <img src="images/Adanomah.jpg" alt="Adanomah">
+                        <h3>Adanomah Rose</h3>
+                        <p>Business lawyer,Civil,Divorce</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="Hans.html">
+                        <img src="images/Hans.jpg" alt="Hans">
+                        <h3>Hans Wilson</h3>
+                        <p>Anticipatory Bail,Business lawyer,Civil,Criminal,Divorce,Family,Property,Recovery,Wills / Trusts</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="Kyei.html">
+                        <img src="images/Kyei.jpg" alt="Kyei">
+                        <h3>Kyei A. Baffour</h3>
+                        <p>Business lawyer,Civil,Property,Wills / Trusts</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="Michael.html">
+                        <img src="images/Michael.jpg" alt="Michael">
+                        <h3>Michael K. Farmer</h3>
+                        <p>Business lawyer,Civil,Property,Wills / Trusts</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="Phillip.html">
+                        <img src="images/Phillip.jpg" alt="Phillip">
+                        <h3>Phillip M. Martine</h3>
+                        <p>Civil,Family,Property,Wills / Trusts</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="Agyemang.html">
+                        <img src="images/Agyemang K. Hammed.jpg" alt="Phillip">
+                        <h3>Agyemang K. Hammed</h3>
+                        <p>Anticipatory Bail,Business lawyer,Civil,Criminal,Wills / Trusts</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="Darron.html">
+                        <img src="images/Darron Farmer.jpg" alt="Phillip">
+                        <h3>Darron Farmer</h3>
+                        <p>Family,Property,Recovery,Wills / Trusts</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="Kennedy.html">
+                        <img src="images/cc.jpg" alt="Darron">
+                        <h3>Kennedy Osei</h3>
+                        <p>Family, Property, Recovery, Wills / Trusts</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? We’re here to help. Fill out the form below, and we’ll get back to you shortly.</p>
+            <form id="contactForm" method="post">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="successMessage" style="display: none; margin-top: 1rem; color: green; font-weight: bold;">
+                Thank you! Your message has been successfully submitted.
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            document.getElementById('successMessage').style.display = 'block'; // Show success message
+            this.reset(); // Clear the form fields
+        });
+    </script>
+    
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Crown & Counsel Law Firm. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
